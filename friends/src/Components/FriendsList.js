@@ -4,9 +4,8 @@ import FriendForm from './FriendForm'
 
 const FriendsList = (props) => {
     return(<div>
-        {props.data.map(friend => <Friend data={friend}/>)}
-        <FriendForm addFriend = {props.addFriend}/>
-    </div>
+        {props.data.map(friend => <Friend key = {friend.name} data={friend}/>)}
+        </div>
     )}
 
 export default FriendsList;
