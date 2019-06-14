@@ -30,8 +30,8 @@ class Friend extends React.Component {
         <p >{this.props.data.name + ` `}</p><br></br>
         age: {this.props.data.age}<br></br>
         email: {this.props.data.email}
-        <button onClick = {this.setUpdateForm}>Make Active Friend</button><br></br>
-        <button onClick = {this.deleteFriend}>Delete Friend</button>
+        <button className = 'homeButton' onClick = {this.setUpdateForm}>Make Active Friend</button><br></br>
+        <button className = 'homeButton' onClick = {this.deleteFriend}>Delete Friend</button>
     </div>
     )}
     }

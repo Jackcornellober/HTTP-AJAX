@@ -58,7 +58,7 @@ class UpdateForm extends React.Component {
           />
           <div className="baseline" />
 
-          <button>Update Friend</button>
+          <button className = 'buttoni'>Update Friend</button>
         </form>
       </div>
     );

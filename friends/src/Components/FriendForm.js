@@ -8,7 +8,7 @@ class FriendForm extends React.Component {
         super();
         this.state = {
             name:'',
-            age:0,
+            age:null,
             email:'',
         };
     }
@@ -42,11 +42,13 @@ class FriendForm extends React.Component {
 
     render() {
     return(
-        <form onSubmit = {this.addFriend}>
-            <input value = {this.state.name} onChange = {this.handleChanges} placeholder = 'name' name = 'name'></input>
-            <input type = 'number' value = {this.state.age} onChange = {this.handleChanges} placeholder = 'age' name = 'age'></input>
-            <input value = {this.state.email} onChange = {this.handleChanges} placeholder = 'email' name = 'email'></input><br></br>
-            <button>Add Friend</button>
+        
+        <form className = 'friendForm' onSubmit = {this.addFriend}>
+            <h2>Add Friend</h2>
+            <input className = 'input' value = {this.state.name} onChange = {this.handleChanges} placeholder = 'name' name = 'name'></input>
+            <input className = 'input' type = 'number' value = {this.state.age} onChange = {this.handleChanges} placeholder = 'age' name = 'age'></input>
+            <input className = 'input' value = {this.state.email} onChange = {this.handleChanges} placeholder = 'email' name = 'email'></input><br></br>
+            <button className = 'buttoni'>Add Friend</button>
         </form>
     
     )}
