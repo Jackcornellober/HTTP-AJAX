@@ -44,3 +44,34 @@
   margin-top: 10px;
   width: 60%;
 }
+
+button {
+  margin-left: 1.5rem;
+  margin-right: 10rem;
+  margin-bottom: .5rem;
+  margin-top: .25rem;
+  width: 10rem;
+}
+
+.friend {
+  background: grey;
+  margin: 0 auto;
+  border-bottom: 2rem solid white;
+  width: 20rem;
+  padding-bottom: 1rem;
+  padding-top: .5rem;
+
+}
+
+.navItem {
+  margin-bottom: 2rem;
+  text-decoration: none;
+  color: black;
+  margin-left: 1rem;
+}
+
+nav {
+  margin-bottom: 1rem;
+}
+
+

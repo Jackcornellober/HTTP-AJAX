@@ -2,6 +2,8 @@ import React from 'react';
 
 class FriendForm extends React.Component {
     
+    
+
     constructor() {
         super();
         this.state = {
@@ -10,6 +12,12 @@ class FriendForm extends React.Component {
             email:'',
         };
     }
+    
+    
+        routeToHome = event => {
+          event.preventDefault();
+          this.props.history.push('/');
+        }
 
     handleChanges = e => {
         this.setState({
@@ -38,7 +46,7 @@ class FriendForm extends React.Component {
             <input value = {this.state.name} onChange = {this.handleChanges} placeholder = 'name' name = 'name'></input>
             <input type = 'number' value = {this.state.age} onChange = {this.handleChanges} placeholder = 'age' name = 'age'></input>
             <input value = {this.state.email} onChange = {this.handleChanges} placeholder = 'email' name = 'email'></input><br></br>
-            <button onClick = {this.addFriend} type = 'button'>Add Friend</button>
+            <button>Add Friend</button>
         </form>
     
     )}
